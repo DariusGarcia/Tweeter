@@ -36,8 +36,7 @@ class TwitterClient(context: Context) : OAuthBaseClient(
 
         const val REST_URL = "https://api.twitter.com/1.1"
 
-        const val REST_CONSUMER_KEY =
-            BuildConfig.CONSUMER_KEY // Change this inside apikey.properties
+        const val REST_CONSUMER_KEY = BuildConfig.CONSUMER_KEY // Change this inside apikey.properties
 
         const val REST_CONSUMER_SECRET =
             BuildConfig.CONSUMER_SECRET // Change this inside apikey.properties

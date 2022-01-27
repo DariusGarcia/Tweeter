@@ -23,13 +23,15 @@ class TweetsAdapter(val tweets: ArrayList<Tweet>) : RecyclerView.Adapter<TweetsA
 
     override fun onBindViewHolder(holder: TweetsAdapter.ViewHolder, position: Int) {
         // In charge of populating date into the item through view holder.
-        // Get teh data model based on the postition.
+        // Get teh data model based on the position.
         val tweet: Tweet = tweets.get(position)
 
         // Set item views based on views and data model.
         holder.tvUserName.text = tweet.user?.name // '?' signifies it that if the user was not pasreed correctly and we dont have a user object as part of the tweet objet then the name will just be blank.
         holder.tvTweetBody.text = tweet.body
 
+        var formattedTime = TimeFormatter.getTimeDifference(tweet.createdAt)
+        holder.tvTime.text = formattedTime
         // Use glide
         Glide.with(holder.itemView).load(tweet.user?.publicImageUrl).into(holder.ivProfileImage)
     }
@@ -55,5 +57,6 @@ class TweetsAdapter(val tweets: ArrayList<Tweet>) : RecyclerView.Adapter<TweetsA
         val ivProfileImage = itemView.findViewById<ImageView>(R.id.ivProfileImage)
         val tvUserName = itemView.findViewById<TextView>(R.id.tvUsername)
         val tvTweetBody = itemView.findViewById<TextView>(R.id.tvTweetBody)
+        val tvTime = itemView.findViewById<TextView>(R.id.tvTime)
     }
 }

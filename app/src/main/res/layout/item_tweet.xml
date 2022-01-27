@@ -39,4 +39,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constrainedWidth="true"
         tools:text="This is a really long tweet to h hhhhhhhhhhh test our application." />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5m"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tvTweetBody"
+        app:layout_constraintEnd_toEndOf="@+id/tvTweetBody"
+        app:layout_constraintStart_toEndOf="@+id/tvUsername"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
