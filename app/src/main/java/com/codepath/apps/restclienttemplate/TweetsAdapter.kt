@@ -27,7 +27,7 @@ class TweetsAdapter(val tweets: ArrayList<Tweet>) : RecyclerView.Adapter<TweetsA
         val tweet: Tweet = tweets.get(position)
 
         // Set item views based on views and data model.
-        holder.tvUserName.text = tweet.user?.name // '?' signifies it that if the user was not pasreed correctly and we dont have a user object as part of the tweet objet then the name will just be blank.
+        holder.tvUserName.text = tweet.user?.name // '?' signifies it that if the user was not parsed correctly and we don't have a user object as part of the tweet objet then the name will just be blank.
         holder.tvTweetBody.text = tweet.body
 
         var formattedTime = TimeFormatter.getTimeDifference(tweet.createdAt)
