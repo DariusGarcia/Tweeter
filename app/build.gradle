@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'kotlin-parcelize'
 }
 
 def apikeyPropertiesFile = rootProject.file("apikey.properties")
@@ -68,6 +69,7 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.2.0'
 
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'com.android.support:support-annotations:28.0.0'
 
     // Room for simple persistence with an ORM
     def room_version = "2.2.6"
