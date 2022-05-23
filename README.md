@@ -1,12 +1,11 @@
 # Project 2 - Tweeter [part 2]
 
-Tweeter is an android app that allows a user to view his Twitter timeline and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
+Tweeter is a native Android mobile app that allows a user to view their Twitter timeline and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
 
-Time spent: **40** hours spent in total
 
 ## User Stories
 
-The following **required** functionality is completed:
+The following functionality is completed:
 
 - [x] User can **compose and post a new tweet**
   - [x] User can click a “Compose” icon in the Action Bar on the top right
@@ -15,7 +14,7 @@ The following **required** functionality is completed:
   - [x] Newly created tweet should be manually inserted into the timeline and not rely on a full refresh
   - [x] User can **see a counter with total number of characters left for tweet** on compose tweet page
 
-The following **optional** features are implemented:
+The following additional features are implemented:
 
 - [x] User is using **"Twitter branded" colors and styles**
 - [x] Use Parcelable instead of Serializable using the popular [Parceler library](http://guides.codepath.org/android/Using-Parceler).
@@ -26,7 +25,6 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://i.imgur.com/qJyfqca.gif' title='Part 2 Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
@@ -53,11 +51,9 @@ I had trouble trying to implement a character counter in the compose activity wh
     See the License for the specific language governing permissions and
     limitations under the License.
 
-# Project 2 - Tweeter [part 1]
+# Tweeter [part 1]
 
 Tweeter is an android app that allows a user to view their Twitter timeline. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
-
-Time spent: 11 hours spent in total
 
 ## User Stories
 
@@ -79,7 +75,6 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://i.imgur.com/zxFx8WA.gif' title='Part 1 Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
