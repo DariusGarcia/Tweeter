@@ -25,11 +25,6 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://i.imgur.com/qJyfqca.gif' title='Part 2 Video Walkthrough' width='' alt='Video Walkthrough' />
 
-
-## Notes
-
-I had trouble trying to implement a character counter in the compose activity which shows how many characters you have left to compose a tweet. I was able to solve this by using the "OnTextChanged" method to set the character counter and match the length of my tweets. 
-
 ## Open-source libraries used
 
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
